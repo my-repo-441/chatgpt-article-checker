@@ -1,0 +1,24 @@
+#実行環境
+・python3.8
+・arm64
+
+#仮想環境を作成
+python3 venv ~/venv/chatgpt-article-checker
+
+#仮想環境をアクティベート
+source /venv/chatgpt-article-checker/bin/activate
+
+#現環境にインストールされているライブラリ名をrequirements.txtに保存
+pip install -r requirements.txt
+
+#.envファイルを作成
+.envファイルにOPENAIのAPIキーを環境変数として登録。
+例：OPENAI_API_KEY=your_openai_api_key
+
+#scraping.py実行
+python scraping.py
+
+ #以下が表示されるので、添削対象のURLを入力する。
+ 記事のURLを入力してください: https://www.kuretom.com/alexa-hotpepper/
+
+
